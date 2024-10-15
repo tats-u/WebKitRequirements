@@ -12,8 +12,9 @@ vcpkg_download_distfile(ARCHIVE
 
 # Patches
 set(PATCHES
+    ${CMAKE_CURRENT_LIST_DIR}/patches/0001-Ignore-local-install-of-OpenSSL-on-Windows.patch
     # Remove after next release
-    ${CMAKE_CURRENT_LIST_DIR}/patches/0001-Use-REQUIRED-when-finding-a-package.patch
+    ${CMAKE_CURRENT_LIST_DIR}/patches/0002-Use-REQUIRED-when-finding-a-package.patch
 )
 
 # Extract archive
